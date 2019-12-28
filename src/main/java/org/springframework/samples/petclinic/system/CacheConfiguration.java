@@ -29,7 +29,7 @@ import org.springframework.context.annotation.Configuration;
  * accessible via JMX.
  */
 @Configuration(proxyBeanMethods = false)
-@EnableCaching
+@EnableCaching  //캐시 관련된 기능이 활성화 된다.
 class CacheConfiguration {
 
     @Bean

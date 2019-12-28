@@ -18,6 +18,7 @@ package org.springframework.samples.petclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 /**
  * PetClinic Spring Boot Application.
@@ -25,8 +26,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Dave Syer
  *
  */
-@SpringBootApplication(proxyBeanMethods = false)
+@SpringBootApplication(proxyBeanMethods = false)    //Configuration이라는 Annoation을 가진 Method
 public class PetClinicApplication {
+
+    @Bean
+    public String JongJin(){
+        return "BaeJongJin";
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(PetClinicApplication.class, args);

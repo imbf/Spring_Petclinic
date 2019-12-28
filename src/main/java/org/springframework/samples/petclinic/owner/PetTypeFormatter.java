@@ -32,7 +32,7 @@ import org.springframework.stereotype.Component;
  * @author Juergen Hoeller
  * @author Michael Isvy
  */
-@Component
+@Component  //Component Annoation이 붙어 있기 떄문에 당연히 Bean이 된다.
 public class PetTypeFormatter implements Formatter<PetType> {
 
     private final PetRepository pets;
