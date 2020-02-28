@@ -37,7 +37,7 @@ import java.util.Map;
  * @author Arjen Poutsma
  * @author Michael Isvy
  */
-@Controller //Controller 코드에 Component라는 Annoation이 붙어 있기 때문에 Controller는 Compoenent와 같다고 취급할 수 있다.
+@Controller //Controller 코드에 Component라는 Annoation이 붙어 있기 때문에 Controller는 Component와 같다고 취급할 수 있다.
 class OwnerController {
 
     private static final String VIEWS_OWNER_CREATE_OR_UPDATE_FORM = "owners/createOrUpdateOwnerForm";
